@@ -1,28 +1,26 @@
 
-
-<script>
-//function for displaying values
 function dis(val)
 {
 document.getElementById("edu").value+=val
  }
-//function for evaluation
+
+
 function solve()
 {
 let x = document.getElementById("edu").value
 let y = eval(x)
 document.getElementById("edu").value = y
 }
-//function for clearing the display
+
 function clr()
 {
 document.getElementById("edu").value = ""
 }
 
-function convertBinary() {
-  var output = document.getElementById("outputBinary");
-  var input = document.getElementById("inputBinary").value;
-  output.value = "";
+function convertBinary()
+{
+  var input = document.getElementById("edu").value;
+  let output.value = "";
   for (i = 0; i < input.length; i++) {
     var e = input[i].charCodeAt(0);
     var s = "";
@@ -35,5 +33,6 @@ function convertBinary() {
       s = "0" + s;
     }
     output.value += s;
-  }
-</script>
+    //var output = document.getElementById("outputBinary");
+    document.getElementById("edu").value = output
+  }}

@@ -1,4 +1,4 @@
-<!-- for styling -->
+
 <style>
 .title{
 border-radius: 10px;
@@ -6,8 +6,9 @@ margin-bottom: 10px;
 text-align:center;
 width: 210px;
 color:#ffffff;
-border: solid black 1px;
+border: solid  1px;
 }
+
 input[type="button"]
 {
 border-radius: 10px;
@@ -16,6 +17,7 @@ color: black;
 border-color:#9BAC02 ;
 width:105%;
 }
+
 input[type="text"]
 {
 border-radius: 10px;
@@ -27,8 +29,8 @@ width:100%
 
 body {
  background-color: #FFF4D9;
+ padding-left: 40%;
+ padding-top: 17%;
  }
-
-
 
 </style>
