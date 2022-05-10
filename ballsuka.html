@@ -25,30 +25,23 @@
                document.getElementById("result").value = ""
            }
 
-           function squareRoot ()  //finner ikke måtten å lage kvadratrot på
+           function squareRoot ()  //funksjon som regner kvadratrot
            {
-              console.log(Math.sqrt(.value));
+              calculatorForm.result.value= Math.sqrt(calculatorForm.result.value);
            }
 
-
-
-
-
-
-           function calcHypotenuse(a, b) {
-  return (Math.sqrt((a * a) + (b * b)));
-}
         </script>
 
- <link rel="stylesheet" href="styles.css">
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
- <!-- create table -->
 <body>
 
 <div class = title > "Calculator"</div>
 <table border="1">
+  <form class="calculatorForm" name="calculatorForm">
+    <div class="screen">
 <tr>
 <td><input type="button" value="c" onclick="clr()"/> </td>
 <td colspan="3"><input type="text" id="result"/></td>
@@ -81,12 +74,15 @@
 <td><input type="button" value="." onclick="dis('.')"/> </td>
 <td><input type="button" value="0" onclick="dis('0')"/> </td>
 
-<!-- Evaluating function call eval()-->
 <td><input type="button" value="=" onclick="solve()"/> </td>
-<td><input type="button" value="√" onclick="squareRoot('√')"/> </td>
+<td><input type="button" value="√" onclick="squareRoot()"/> </td>
 </tr>
-</table>
 
+   </div>
+
+  </form>
+
+</table>
 
 </body>
 </html>
